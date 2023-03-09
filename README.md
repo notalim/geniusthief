@@ -25,7 +25,6 @@ pip3 install bs4
 4. Insert the artist name in the end of the file. 
 
 5. Create a folder `lyrics` inside of the folder with the script before running it. You can easily do it by running this command in the terminal:
-
 ```
 mkdir ./lyrics 
 ```
