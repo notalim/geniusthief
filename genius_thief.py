@@ -7,7 +7,7 @@ import os
 # Search and manipulate strings
 import re
 
-GENIUS_API_TOKEN='insert your token here'
+GENIUS_API_TOKEN='insert token here'
 
 # Get artist object from Genius API
 def request_artist_info(artist_name, page):
@@ -70,11 +70,11 @@ def write_lyrics_to_file(artist_name, song_count):
     for url in urls:
         lyrics = scrape_song_lyrics(url)
         f.write(lyrics)
-        f.write('\n') # Add a newline character after each song's lyrics
+        f.write('\n\n') # Add a newline character after each song's lyrics
     f.close()
     num_lines = sum(1 for line in open('lyrics/' + artist_name.lower() + '.txt', 'rb'))
     print('Wrote {} lines to file from {} songs'.format(num_lines, song_count))
   
 # DEMO  
-write_lyrics_to_file('artist name', 100)
+write_lyrics_to_file('insert artist name here', 100)
 
